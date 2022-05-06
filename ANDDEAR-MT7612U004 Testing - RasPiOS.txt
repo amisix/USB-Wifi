@@ -43,6 +43,8 @@ pi@raspberrypi:~ $ lsusb -t
 
 
 -----------------------------------------------------------------------------------------------------------------------------------
+
+
 Test B: Failed
 Raspberry Pi 4B
 RasPiOS 32bit 2022-04-04
@@ -119,6 +121,8 @@ pi@raspberrypi:~ $ lsusb -t
 
 
 ---------------------------------------------------------------------------------------------------
+
+
 Test C: Failed (both adapters failed, lsusb hangs)
 Raspberry Pi 4B
 RasPiOS 32bit 2022-04-04 
@@ -201,7 +205,10 @@ pi@raspberrypi:~ $ dmesg | grep -i mt76
 [   36.663087] mt76x2u 2-2:1.0: mac specific condition occurred
 [   36.763077] mt76x2u 2-2:1.0: timed out waiting for pending tx
 
+
 -------------------------------------------------------------------------------------
+
+
 Test D: Successful
 Raspberry Pi 4B
 RasPiOS 32bit 2022-04-04
@@ -217,6 +224,7 @@ eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         TX packets 108  bytes 13098 (12.7 KiB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
+
 pi@raspberrypi:~ $ lsusb -t
 /:  Bus 02.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/4p, 5000M
     |__ Port 1: Dev 2, If 0, Class=Vendor Specific Class, Driver=mt76x2u, 5000M
@@ -225,6 +233,8 @@ pi@raspberrypi:~ $ lsusb -t
 
 
 -----------------------------------------------------------------------------------------------
+
+
 Test E: Success
 Raspberry Pi 4B
 RasPiOS 32bit 2022-04-04 
@@ -238,13 +248,17 @@ pi@raspberrypi:~ $ dmesg | grep -i mt76
 [    6.939670] mt76x2u 1-1.3:1.0: Build Time: 201507311614____
 [    8.377990] usbcore: registered new interface driver mt76x2u
 
+
 pi@raspberrypi:~ $ lsusb -t
 /:  Bus 02.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/4p, 5000M
 /:  Bus 01.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/1p, 480M
     |__ Port 1: Dev 2, If 0, Class=Hub, Driver=hub/4p, 480M
         |__ Port 3: Dev 3, If 0, Class=Vendor Specific Class, Driver=mt76x2u, 480M
 
+
 -------------------------------------------------------------------------------------------------
+
+
 Test F: Success
 Raspberry Pi 4B
 RasPiOS 32bit 2022-04-04
@@ -263,6 +277,7 @@ pi@raspberrypi:~ $ dmesg | grep -i mt76
 [    9.019121] mt76x2u 1-1.4:1.0: Build Time: 201507311614____
 [    9.938265] usbcore: registered new interface driver mt76x2u
 
+
 pi@raspberrypi:~ $ lsusb -t
 /:  Bus 02.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/4p, 5000M
 /:  Bus 01.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/1p, 480M
@@ -270,7 +285,10 @@ pi@raspberrypi:~ $ lsusb -t
         |__ Port 3: Dev 3, If 0, Class=Vendor Specific Class, Driver=mt76x2u, 480M
         |__ Port 4: Dev 4, If 0, Class=Vendor Specific Class, Driver=mt76x2u, 480M
 
+
 -------------------------------------------------------------------------------------------------
+
+
 Test G: Partial Success, ANDDEAR adapter plugged into USB2 functions & adapter plugged into USB3 does not
 Raspberry Pi 4B
 RaspPiOs 32bit 2022-04-04
@@ -322,6 +340,8 @@ pi@raspberrypi:~ $ lsusb -t
 
 
 ------------------------------------------------------------------------------------------------
+
+
 Test H: Partial Success, Alfa ACM adapter plugged into USB3 functions while ANDDEAR adapter plugged into USB3 fails)
 Raspberry Pi 4B
 RaspPiOs 32bit 2022-04-04
@@ -377,40 +397,3 @@ pi@raspberrypi:~ $ lsusb -t
     |__ Port 2: Dev 3, If 0, Class=Vendor Specific Class, Driver=mt76x2u, 5000M
 /:  Bus 01.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/1p, 480M
     |__ Port 1: Dev 2, If 0, Class=Hub, Driver=hub/4p, 480M
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Two ANDDEAR 004 Adapter (USB3):
-One ANDDEAR 004 Adapter (USB2):
-Two ANDDEAR 004 Adapter (USB2):
-
-Two ANDDEAR 004 Adapter (USB2 + USB3):
-One ANDDEAR Adapter & One Alfa ACM (USB3):
-
-
-
-
-
