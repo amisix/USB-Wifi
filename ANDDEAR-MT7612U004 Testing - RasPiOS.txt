@@ -1,0 +1,416 @@
+Test A: Failed
+Raspberry Pi 4B
+RasPiOS 32bit 2022-04-04 
+ANDDEAR-MT7612U004 | Single Adapter, USB3 Port #1
+
+pi@raspberrypi:~ $ dmesg | grep -i mt76
+[    6.322196] mt76x2u 2-1:1.0: ASIC revision: 76120044
+[    6.397284] mt76x2u 2-1:1.0: ROM patch build: 20141115060606a
+[    6.652136] mt76x2u 2-1:1.0: Firmware Version: 0.0.00
+[    6.652168] mt76x2u 2-1:1.0: Build: 1
+[    6.652187] mt76x2u 2-1:1.0: Build Time: 201507311614____
+[    8.049143] usbcore: registered new interface driver mt76x2u
+[    9.044731] mt76x2u 2-1:1.0: error: mt76x02u_mcu_wait_resp failed with -108
+[    9.044816] mt76x2u 2-1:1.0: mac specific condition occurred
+[    9.795716] mt76x2u 2-1:1.0: ASIC revision: 76120044
+[    9.821632] mt76x2u 2-1:1.0: ROM patch build: 20141115060606a
+[    9.985195] mt76x2u 2-1:1.0: Firmware Version: 0.0.00
+[    9.985214] mt76x2u 2-1:1.0: Build: 1
+[    9.985225] mt76x2u 2-1:1.0: Build Time: 201507311614____
+[   11.443704] mt76x2u 2-1:1.0: error: mt76x02u_mcu_wait_resp failed with -19
+[   11.443753] mt76x2u 2-1:1.0: mac specific condition occurred
+[   12.205547] mt76x2u 2-1:1.0: ASIC revision: 76120044
+[   12.229618] mt76x2u 2-1:1.0: ROM patch build: 20141115060606a
+[   12.394004] mt76x2u 2-1:1.0: Firmware Version: 0.0.00
+[   12.394016] mt76x2u 2-1:1.0: Build: 1
+[   12.394022] mt76x2u 2-1:1.0: Build Time: 201507311614____
+[   14.053713] mt76x2u 2-1:1.0: error: mt76x02u_mcu_wait_resp failed with -19
+[   14.053764] mt76x2u 2-1:1.0: mac specific condition occurred
+[   14.825732] mt76x2u 2-1:1.0: ASIC revision: 76120044
+[   14.850966] mt76x2u 2-1:1.0: ROM patch build: 20141115060606a
+[   15.014019] mt76x2u 2-1:1.0: Firmware Version: 0.0.00
+[   15.014032] mt76x2u 2-1:1.0: Build: 1
+[   15.014038] mt76x2u 2-1:1.0: Build Time: 201507311614____
+[   16.533734] mt76x2u 2-1:1.0: error: mt76x02u_mcu_wait_resp failed with -19
+[   16.533817] mt76x2u 2-1:1.0: mac specific condition occurred
+
+
+pi@raspberrypi:~ $ lsusb -t
+/:  Bus 02.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/4p, 5000M
+    |__ Port 1: Dev 10, If 0, Class=Vendor Specific Class, Driver=mt76x2u, 5000M
+/:  Bus 01.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/1p, 480M
+    |__ Port 1: Dev 2, If 0, Class=Hub, Driver=hub/4p, 480M
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+Test B: Failed
+Raspberry Pi 4B
+RasPiOS 32bit 2022-04-04
+ANDDEAR-MT7612U004 | Single Adapter, USB3, Port #2  
+
+pi@raspberrypi:~ $ dmesg | grep -i mt76
+[    7.187099] mt76x2u 2-2:1.0: ASIC revision: 76120044
+[    7.312861] mt76x2u 2-2:1.0: ROM patch build: 20141115060606a
+[    7.649205] mt76x2u 2-2:1.0: Firmware Version: 0.0.00
+[    7.649239] mt76x2u 2-2:1.0: Build: 1
+[    7.649257] mt76x2u 2-2:1.0: Build Time: 201507311614____
+[    8.850711] usbcore: registered new interface driver mt76x2u
+[    9.753563] mt76x2u 2-2:1.0: error: mt76x02u_mcu_wait_resp failed with -19
+[    9.753621] mt76x2u 2-2:1.0: mac specific condition occurred
+[    9.863273] mt76x2u 2-2:1.0: mac specific condition occurred
+[   10.625766] mt76x2u 2-2:1.0: ASIC revision: 76120044
+[   10.662007] mt76x2u 2-2:1.0: ROM patch build: 20141115060606a
+[   10.824104] mt76x2u 2-2:1.0: Firmware Version: 0.0.00
+[   10.824124] mt76x2u 2-2:1.0: Build: 1
+[   10.824135] mt76x2u 2-2:1.0: Build Time: 201507311614____
+[   12.303653] mt76x2u 2-2:1.0: error: mt76x02u_mcu_wait_resp failed with -19
+[   12.303916] mt76x2u 2-2:1.0: mac specific condition occurred
+[   13.056128] mt76x2u 2-2:1.0: ASIC revision: 76120044
+[   13.085431] mt76x2u 2-2:1.0: ROM patch build: 20141115060606a
+[   13.254086] mt76x2u 2-2:1.0: Firmware Version: 0.0.00
+[   13.254098] mt76x2u 2-2:1.0: Build: 1
+[   13.254104] mt76x2u 2-2:1.0: Build Time: 201507311614____
+[   14.764514] mt76x2u 2-2:1.0: error: mt76x02u_mcu_wait_resp failed with -19
+[   14.764863] mt76x2u 2-2:1.0: mac specific condition occurred
+[   15.505709] mt76x2u 2-2:1.0: ASIC revision: 76120044
+[   15.531109] mt76x2u 2-2:1.0: ROM patch build: 20141115060606a
+[   15.694071] mt76x2u 2-2:1.0: Firmware Version: 0.0.00
+[   15.694085] mt76x2u 2-2:1.0: Build: 1
+[   15.694091] mt76x2u 2-2:1.0: Build Time: 201507311614____
+[   24.346407] mt76x2u 2-2:1.0: error: mt76x02u_mcu_wait_resp failed with -108
+[   24.357632] mt76x2u 2-2:1.0: mac specific condition occurred
+[   24.604160] mt76x2u 2-2:1.0: mac specific condition occurred
+[   24.713587] mt76x2u 2-2:1.0: mac specific condition occurred
+[   24.813585] mt76x2u 2-2:1.0: timed out waiting for pending tx
+[   25.515651] mt76x2u 2-2:1.0: ASIC revision: 76120044
+[   25.539998] mt76x2u 2-2:1.0: ROM patch build: 20141115060606a
+[   25.705402] mt76x2u 2-2:1.0: Firmware Version: 0.0.00
+[   25.705428] mt76x2u 2-2:1.0: Build: 1
+[   25.705445] mt76x2u 2-2:1.0: Build Time: 201507311614____
+[   27.174991] mt76x2u 2-2:1.0: error: mt76x02u_mcu_wait_resp failed with -108
+[   27.175064] mt76x2u 2-2:1.0: mac specific condition occurred
+[   27.905810] mt76x2u 2-2:1.0: ASIC revision: 76120044
+[   27.930178] mt76x2u 2-2:1.0: ROM patch build: 20141115060606a
+[   28.096364] mt76x2u 2-2:1.0: Firmware Version: 0.0.00
+[   28.096376] mt76x2u 2-2:1.0: Build: 1
+[   28.096382] mt76x2u 2-2:1.0: Build Time: 201507311614____
+[   29.475216] mt76x2u 2-2:1.0: error: mt76x02u_mcu_wait_resp failed with -108
+[   29.475253] mt76x2u 2-2:1.0: mac specific condition occurred
+[   30.206799] mt76x2u 2-2:1.0: ASIC revision: 76120044
+[   30.239266] mt76x2u 2-2:1.0: ROM patch build: 20141115060606a
+[   30.410646] mt76x2u 2-2:1.0: Firmware Version: 0.0.00
+                   <snipped repetitive errors>
+[   42.206679] mt76x2u 2-2:1.0: Build: 1
+[   42.206690] mt76x2u 2-2:1.0: Build Time: 201507311614____
+[   70.745321] mt76x2u 2-2:1.0: mac specific condition occurred
+[   71.426899] mt76x2u 2-2:1.0: ASIC revision: 76120044
+[   74.644977] mt76x2u 2-2:1.0: vendor request req:47 off:0148 failed:-110
+[   77.855461] mt76x2u 2-2:1.0: vendor request req:46 off:0148 failed:-110
+[   81.054946] mt76x2u 2-2:1.0: vendor request req:47 off:0148 failed:-110
+[   84.275727] mt76x2u 2-2:1.0: vendor request req:46 off:0148 failed:-110
+[   87.485071] mt76x2u 2-2:1.0: vendor request req:47 off:1204 failed:-110
+
+
+pi@raspberrypi:~ $ lsusb -t
+/:  Bus 02.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/4p, 5000M
+    |__ Port 1: Dev 19, If 0, Class=Vendor Specific Class, Driver=mt76x2u, 5000M
+/:  Bus 01.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/1p, 480M
+    |__ Port 1: Dev 2, If 0, Class=Hub, Driver=hub/4p, 480M
+
+
+---------------------------------------------------------------------------------------------------
+Test C: Failed (both adapters failed, lsusb hangs)
+Raspberry Pi 4B
+RasPiOS 32bit 2022-04-04 
+ANDDEAR-MT7612U004 | Dual Adapters, USB3, Ports #1 & #2 
+
+pi@raspberrypi:~ $ dmesg | grep -i mt76
+[    6.677603] mt76x2u 2-1:1.0: ASIC revision: 76120044
+[    6.876477] mt76x2u 2-1:1.0: ROM patch build: 20141115060606a
+[    7.092220] mt76x2u 2-1:1.0: Firmware Version: 0.0.00
+[    7.092251] mt76x2u 2-1:1.0: Build: 1
+[    7.092269] mt76x2u 2-1:1.0: Build Time: 201507311614____
+[    8.926197] mt76x2u 2-2:1.0: ASIC revision: 76120044
+[    8.967951] mt76x2u 2-2:1.0: ROM patch build: 20141115060606a
+[    9.124441] mt76x2u 2-2:1.0: Firmware Version: 0.0.00
+[    9.124460] mt76x2u 2-2:1.0: Build: 1
+[    9.124469] mt76x2u 2-2:1.0: Build Time: 201507311614____
+[   10.028137] usbcore: registered new interface driver mt76x2u
+[   11.184517] mt76x2u 2-2:1.0: error: mt76x02u_mcu_wait_resp failed with -108
+[   11.184561] mt76x2u 2-2:1.0: mac specific condition occurred
+[   12.005273] mt76x2u 2-2:1.0: ASIC revision: 76120044
+[   12.031710] mt76x2u 2-2:1.0: ROM patch build: 20141115060606a
+[   12.193833] mt76x2u 2-2:1.0: Firmware Version: 0.0.00
+[   12.193845] mt76x2u 2-2:1.0: Build: 1
+[   12.193851] mt76x2u 2-2:1.0: Build Time: 201507311614____
+[   12.783357] mt76x2u 2-1:1.0: mac specific condition occurred
+[   13.083390] mt76x2u 2-1:1.0: mac specific condition occurred
+[   13.393875] mt76x2u 2-1:1.0: mac specific condition occurred
+[   13.613388] mt76x2u 2-1:1.0: mac specific condition occurred
+[   13.723325] mt76x2u 2-1:1.0: mac specific condition occurred
+[   13.823326] mt76x2u 2-1:1.0: timed out waiting for pending tx
+[   14.515441] mt76x2u 2-1:1.0: ASIC revision: 76120044
+[   14.547933] mt76x2u 2-1:1.0: ROM patch build: 20141115060606a
+[   14.707007] mt76x2u 2-1:1.0: Firmware Version: 0.0.00
+[   14.707022] mt76x2u 2-1:1.0: Build: 1
+[   14.707027] mt76x2u 2-1:1.0: Build Time: 201507311614____
+[   16.154741] mt76x2u 2-2:1.0: error: mt76x02u_mcu_wait_resp failed with -108
+[   16.154818] mt76x2u 2-2:1.0: mac specific condition occurred
+[   16.925208] mt76x2u 2-2:1.0: ASIC revision: 76120044
+[   16.951283] mt76x2u 2-2:1.0: ROM patch build: 20141115060606a
+[   17.114333] mt76x2u 2-2:1.0: Firmware Version: 0.0.00
+[   17.114347] mt76x2u 2-2:1.0: Build: 1
+[   17.114353] mt76x2u 2-2:1.0: Build Time: 201507311614____
+[   18.524512] mt76x2u 2-2:1.0: error: mt76x02u_mcu_wait_resp failed with -108
+[   18.524551] mt76x2u 2-2:1.0: mac specific condition occurred
+[   19.265234] mt76x2u 2-2:1.0: ASIC revision: 76120044
+[   19.291709] mt76x2u 2-2:1.0: ROM patch build: 20141115060606a
+[   19.454468] mt76x2u 2-2:1.0: Firmware Version: 0.0.00
+[   19.454481] mt76x2u 2-2:1.0: Build: 1
+[   19.454486] mt76x2u 2-2:1.0: Build Time: 201507311614____
+                 < snipped repetitive error>
+[   27.934384] mt76x2u 2-2:1.0: error: mt76x02u_mcu_wait_resp failed with -108
+[   27.934424] mt76x2u 2-2:1.0: mac specific condition occurred
+[   28.646011] mt76x2u 2-2:1.0: ASIC revision: 76120044
+[   28.676309] mt76x2u 2-2:1.0: ROM patch build: 20141115060606a
+[   28.835500] mt76x2u 2-2:1.0: Firmware Version: 0.0.00
+[   28.835528] mt76x2u 2-2:1.0: Build: 1
+[   28.835545] mt76x2u 2-2:1.0: Build Time: 201507311614____
+[   30.314584] mt76x2u 2-2:1.0: error: mt76x02u_mcu_wait_resp failed with -108
+[   30.314626] mt76x2u 2-2:1.0: mac specific condition occurred
+[   31.025937] mt76x2u 2-2:1.0: ASIC revision: 76120044
+[   31.056206] mt76x2u 2-2:1.0: ROM patch build: 20141115060606a
+[   31.216374] mt76x2u 2-2:1.0: Firmware Version: 0.0.00
+[   31.216424] mt76x2u 2-2:1.0: Build: 1
+[   31.216439] mt76x2u 2-2:1.0: Build Time: 201507311614____
+[   32.704311] mt76x2u 2-2:1.0: error: mt76x02u_mcu_wait_resp failed with -108
+[   32.704353] mt76x2u 2-2:1.0: mac specific condition occurred
+[   33.455859] mt76x2u 2-2:1.0: ASIC revision: 76120044
+[   33.488860] mt76x2u 2-2:1.0: ROM patch build: 20141115060606a
+[   33.654869] mt76x2u 2-2:1.0: Firmware Version: 0.0.00
+[   33.654892] mt76x2u 2-2:1.0: Build: 1
+[   33.654907] mt76x2u 2-2:1.0: Build Time: 201507311614____
+[   35.263295] mt76x2u 2-2:1.0: error: mt76x02u_mcu_wait_resp failed with -19
+[   35.263343] mt76x2u 2-2:1.0: mac specific condition occurred
+[   35.373043] mt76x2u 2-2:1.0: mac specific condition occurred
+[   35.483115] mt76x2u 2-2:1.0: mac specific condition occurred
+[   35.733664] mt76x2u 2-2:1.0: mac specific condition occurred
+[   36.033167] mt76x2u 2-2:1.0: mac specific condition occurred
+[   36.333717] mt76x2u 2-2:1.0: mac specific condition occurred
+[   36.553711] mt76x2u 2-2:1.0: mac specific condition occurred
+[   36.663087] mt76x2u 2-2:1.0: mac specific condition occurred
+[   36.763077] mt76x2u 2-2:1.0: timed out waiting for pending tx
+
+-------------------------------------------------------------------------------------
+Test D: Successful
+Raspberry Pi 4B
+RasPiOS 32bit 2022-04-04
+Alfa AWUS036ACM | Single Adapter USB3, Port #1 
+
+pi@raspberrypi:~ $ ifconfig
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.10.10.101  netmask 255.255.255.0  broadcast 10.10.10.255
+        inet6 fe80::d831:9d5f:9e08:8414  prefixlen 64  scopeid 0x20<link>
+        ether e4:5f:01:97:37:ac  txqueuelen 1000  (Ethernet)
+        RX packets 750  bytes 66512 (64.9 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 108  bytes 13098 (12.7 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+pi@raspberrypi:~ $ lsusb -t
+/:  Bus 02.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/4p, 5000M
+    |__ Port 1: Dev 2, If 0, Class=Vendor Specific Class, Driver=mt76x2u, 5000M
+/:  Bus 01.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/1p, 480M
+    |__ Port 1: Dev 2, If 0, Class=Hub, Driver=hub/4p, 480M
+
+
+-----------------------------------------------------------------------------------------------
+Test E: Success
+Raspberry Pi 4B
+RasPiOS 32bit 2022-04-04 
+ANDDEAR-MT7612U004 | Single Adapter, USB2 Port #1
+ 
+pi@raspberrypi:~ $ dmesg | grep -i mt76
+[    6.611336] mt76x2u 1-1.3:1.0: ASIC revision: 76120044
+[    6.717362] mt76x2u 1-1.3:1.0: ROM patch build: 20141115060606a
+[    6.939620] mt76x2u 1-1.3:1.0: Firmware Version: 0.0.00
+[    6.939652] mt76x2u 1-1.3:1.0: Build: 1
+[    6.939670] mt76x2u 1-1.3:1.0: Build Time: 201507311614____
+[    8.377990] usbcore: registered new interface driver mt76x2u
+
+pi@raspberrypi:~ $ lsusb -t
+/:  Bus 02.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/4p, 5000M
+/:  Bus 01.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/1p, 480M
+    |__ Port 1: Dev 2, If 0, Class=Hub, Driver=hub/4p, 480M
+        |__ Port 3: Dev 3, If 0, Class=Vendor Specific Class, Driver=mt76x2u, 480M
+
+-------------------------------------------------------------------------------------------------
+Test F: Success
+Raspberry Pi 4B
+RasPiOS 32bit 2022-04-04
+ANDDEAR-MT7612U004 | Dual Adapters, USB2 Port #1 & #2 (counting from top to bottom) 
+
+pi@raspberrypi:~ $ dmesg | grep -i mt76
+[    6.729355] mt76x2u 1-1.3:1.0: ASIC revision: 76120044
+[    6.815760] mt76x2u 1-1.3:1.0: ROM patch build: 20141115060606a
+[    7.186783] mt76x2u 1-1.3:1.0: Firmware Version: 0.0.00
+[    7.186817] mt76x2u 1-1.3:1.0: Build: 1
+[    7.186868] mt76x2u 1-1.3:1.0: Build Time: 201507311614____
+[    8.815332] mt76x2u 1-1.4:1.0: ASIC revision: 76120044
+[    8.848536] mt76x2u 1-1.4:1.0: ROM patch build: 20141115060606a
+[    9.019098] mt76x2u 1-1.4:1.0: Firmware Version: 0.0.00
+[    9.019115] mt76x2u 1-1.4:1.0: Build: 1
+[    9.019121] mt76x2u 1-1.4:1.0: Build Time: 201507311614____
+[    9.938265] usbcore: registered new interface driver mt76x2u
+
+pi@raspberrypi:~ $ lsusb -t
+/:  Bus 02.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/4p, 5000M
+/:  Bus 01.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/1p, 480M
+    |__ Port 1: Dev 2, If 0, Class=Hub, Driver=hub/4p, 480M
+        |__ Port 3: Dev 3, If 0, Class=Vendor Specific Class, Driver=mt76x2u, 480M
+        |__ Port 4: Dev 4, If 0, Class=Vendor Specific Class, Driver=mt76x2u, 480M
+
+-------------------------------------------------------------------------------------------------
+Test G: Partial Success, ANDDEAR adapter plugged into USB2 functions & adapter plugged into USB3 does not
+Raspberry Pi 4B
+RaspPiOs 32bit 2022-04-04
+ANDDEAR-MT7612U004 | Dual Adapters, USB2 & USB3, USB2 Port #1 & USB3 Port #1 (counting from top to bottom)
+
+pi@raspberrypi:~ $ dmesg | grep -i mt76
+[    6.733634] mt76x2u 2-1:1.0: ASIC revision: 76120044
+[    6.898763] mt76x2u 2-1:1.0: ROM patch build: 20141115060606a
+[    7.075545] mt76x2u 2-1:1.0: Firmware Version: 0.0.00
+[    7.075578] mt76x2u 2-1:1.0: Build: 1
+[    7.075596] mt76x2u 2-1:1.0: Build Time: 201507311614____
+[    9.065414] mt76x2u 1-1.3:1.0: ASIC revision: 76120044
+[    9.095281] mt76x2u 1-1.3:1.0: ROM patch build: 20141115060606a
+[    9.254189] mt76x2u 1-1.3:1.0: Firmware Version: 0.0.00
+[    9.254210] mt76x2u 1-1.3:1.0: Build: 1
+[    9.254221] mt76x2u 1-1.3:1.0: Build Time: 201507311614____
+[   10.158839] usbcore: registered new interface driver mt76x2u
+[   10.684557] mt76x2u 2-1:1.0: error: mt76x02u_mcu_wait_resp failed with -108
+[   10.684605] mt76x2u 2-1:1.0: mac specific condition occurred
+[   11.485010] mt76x2u 2-1:1.0: ASIC revision: 76120044
+[   11.506286] mt76x2u 2-1:1.0: ROM patch build: 20141115060606a
+[   11.673782] mt76x2u 2-1:1.0: Firmware Version: 0.0.00
+[   11.673795] mt76x2u 2-1:1.0: Build: 1
+[   11.673801] mt76x2u 2-1:1.0: Build Time: 201507311614____
+[   12.995516] mt76x2u 2-1:1.0: error: mt76x02u_mcu_wait_resp failed with -108
+[   12.996297] mt76x2u 2-1:1.0: mac specific condition occurred
+[   13.754992] mt76x2u 2-1:1.0: ASIC revision: 76120044
+[   13.777321] mt76x2u 2-1:1.0: ROM patch build: 20141115060606a
+[   13.938441] mt76x2u 2-1:1.0: Firmware Version: 0.0.00
+[   13.938462] mt76x2u 2-1:1.0: Build: 1
+[   13.938473] mt76x2u 2-1:1.0: Build Time: 201507311614____
+[   15.414766] mt76x2u 2-1:1.0: error: mt76x02u_mcu_wait_resp failed with -108
+[   15.414836] mt76x2u 2-1:1.0: mac specific condition occurred
+[   16.125005] mt76x2u 2-1:1.0: ASIC revision: 76120044
+[   16.148490] mt76x2u 2-1:1.0: ROM patch build: 20141115060606a
+[   16.313875] mt76x2u 2-1:1.0: Firmware Version: 0.0.00
+[   16.313889] mt76x2u 2-1:1.0: Build: 1
+[   16.313895] mt76x2u 2-1:1.0: Build Time: 201507311614____
+[   19.384600] mt76x2u 2-1:1.0: error: mt76x02u_mcu_wait_resp failed with -108
+[   19.384661] mt76x2u 2-1:1.0: mac specific condition occurred
+
+
+pi@raspberrypi:~ $ lsusb -t
+/:  Bus 02.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/4p, 5000M
+    |__ Port 1: Dev 15, If 0, Class=Vendor Specific Class, Driver=mt76x2u, 5000M
+/:  Bus 01.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/1p, 480M
+    |__ Port 1: Dev 2, If 0, Class=Hub, Driver=hub/4p, 480M
+        |__ Port 3: Dev 3, If 0, Class=Vendor Specific Class, Driver=mt76x2u, 480M
+
+
+------------------------------------------------------------------------------------------------
+Test H: Partial Success, Alfa ACM adapter plugged into USB3 functions while ANDDEAR adapter plugged into USB3 fails)
+Raspberry Pi 4B
+RaspPiOs 32bit 2022-04-04
+ANDDEAR-MT7612U004 & ALFA AWUS036ACM | Dual Adapters, USB3 & USB3, USB3 Port #1 & Port #2 (counting from top to bottom)
+
+pi@raspberrypi:~ $ dmesg | grep -i mt76
+[    6.291869] mt76x2u 2-1:1.0: ASIC revision: 76120044
+[    6.354086] mt76x2u 2-1:1.0: ROM patch build: 20141115060606a
+[    6.602536] mt76x2u 2-1:1.0: Firmware Version: 0.0.00
+[    6.602568] mt76x2u 2-1:1.0: Build: 1
+[    6.602586] mt76x2u 2-1:1.0: Build Time: 201507311614____
+[    7.975664] mt76x2u 2-2:1.0: ASIC revision: 76120044
+[    8.013213] mt76x2u 2-2:1.0: ROM patch build: 20141115060606a
+[    8.184419] mt76x2u 2-2:1.0: Firmware Version: 0.0.00
+[    8.184440] mt76x2u 2-2:1.0: Build: 1
+[    8.184451] mt76x2u 2-2:1.0: Build Time: 201507311614____
+[    9.148570] usbcore: registered new interface driver mt76x2u
+[    9.784662] mt76x2u 2-1:1.0: error: mt76x02u_mcu_wait_resp failed with -108
+[    9.784712] mt76x2u 2-1:1.0: mac specific condition occurred
+[   10.595080] mt76x2u 2-1:1.0: ASIC revision: 76120044
+[   10.621065] mt76x2u 2-1:1.0: ROM patch build: 20141115060606a
+[   10.789045] mt76x2u 2-1:1.0: Firmware Version: 0.0.00
+[   10.789063] mt76x2u 2-1:1.0: Build: 1
+[   10.789072] mt76x2u 2-1:1.0: Build Time: 201507311614____
+[   12.323528] mt76x2u 2-1:1.0: error: mt76x02u_mcu_wait_resp failed with -19
+[   12.323629] mt76x2u 2-1:1.0: mac specific condition occurred
+[   13.135041] mt76x2u 2-1:1.0: ASIC revision: 76120044
+[   13.161584] mt76x2u 2-1:1.0: ROM patch build: 20141115060606a
+[   13.324527] mt76x2u 2-1:1.0: Firmware Version: 0.0.00
+[   13.324539] mt76x2u 2-1:1.0: Build: 1
+[   13.324545] mt76x2u 2-1:1.0: Build Time: 201507311614____
+[   14.963473] mt76x2u 2-1:1.0: error: mt76x02u_mcu_wait_resp failed with -19
+[   14.963562] mt76x2u 2-1:1.0: mac specific condition occurred
+[   15.645755] mt76x2u 2-1:1.0: ASIC revision: 76120044
+[   15.676478] mt76x2u 2-1:1.0: ROM patch build: 20141115060606a
+[   15.833788] mt76x2u 2-1:1.0: Firmware Version: 0.0.00
+[   15.833802] mt76x2u 2-1:1.0: Build: 1
+[   15.833808] mt76x2u 2-1:1.0: Build Time: 201507311614____
+[   18.854526] mt76x2u 2-1:1.0: error: mt76x02u_mcu_wait_resp failed with -108
+[   18.854597] mt76x2u 2-1:1.0: mac specific condition occurred
+[   19.585112] mt76x2u 2-1:1.0: ASIC revision: 76120044
+[   19.610648] mt76x2u 2-1:1.0: ROM patch build: 20141115060606a
+[   19.778454] mt76x2u 2-1:1.0: Firmware Version: 0.0.00
+[   19.778466] mt76x2u 2-1:1.0: Build: 1
+[   19.778472] mt76x2u 2-1:1.0: Build Time: 201507311614____
+[   21.253578] mt76x2u 2-1:1.0: error: mt76x02u_mcu_wait_resp failed with -19
+[   21.253687] mt76x2u 2-1:1.0: mac specific condition occurred
+
+
+pi@raspberrypi:~ $ lsusb -t
+/:  Bus 02.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/4p, 5000M
+    |__ Port 1: Dev 97, If 0, Class=Vendor Specific Class, Driver=mt76x2u, 5000M
+    |__ Port 2: Dev 3, If 0, Class=Vendor Specific Class, Driver=mt76x2u, 5000M
+/:  Bus 01.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/1p, 480M
+    |__ Port 1: Dev 2, If 0, Class=Hub, Driver=hub/4p, 480M
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Two ANDDEAR 004 Adapter (USB3):
+One ANDDEAR 004 Adapter (USB2):
+Two ANDDEAR 004 Adapter (USB2):
+
+Two ANDDEAR 004 Adapter (USB2 + USB3):
+One ANDDEAR Adapter & One Alfa ACM (USB3):
+
+
+
+
+
